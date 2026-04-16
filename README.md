@@ -1,4 +1,4 @@
-# Global temperature shocks, global and regional damage functions
+# Global temperature shocks and damage functions
 
 This repository hosts the global temperature shocks as well as the estimated global and regional damage functions from the paper:
 
@@ -7,11 +7,20 @@ Forthcoming, *Quarterly Journal of Economics*
 Published version: https://doi.org/10.1093/qje/qjag011  
 Ungated version: https://dkaenzig.github.io/diegokaenzig.com/Papers/bk_micc.pdf  
 
-The repository contains Excel files with:
+This repository contains two main folders:
 
-- **Daily oil supply surprises**
-- **Monthly oil supply surprises**
-- **Monthly oil supply news shocks**, extracted from the VAR in the paper
+### 1. Temperature shocks
+This folder contains:
+- `temperatureShocks_pwt.csv`: Constructed temperature shocks for the PWT sample (1960–2019)
+- `temperatureShocks_bu.csv`: Constructed temperature shocks for the BU sample (1860–2019)
+
+### 2. Damage functions
+This folder contains:
+- `DamageFunctions.csv`: Estimated damage functions up to horizon \( h = 20 \)
+- `DamageParameters.csv`: Estimated damage function coefficients for A, B, and C
+- `OutputPath.csv`: Simulated output path under a business-as-usual scenario
+
+A repo with the full replication files can be found here: https://github.com/dkaenzig/micc_replication
 
 For questions, please contact the authors at dkaenzig@northwestern.edu and adrienbilal@stanford.edu
 
